@@ -21,6 +21,7 @@
       crossorigin="anonymous"
     />
     <!-- External css -->
+    {% block extra_head %}{% endblock %}
     <link rel="stylesheet" href="{% static 'app/style.css' %}" />
     <title>ToDo App</title>
   </head>

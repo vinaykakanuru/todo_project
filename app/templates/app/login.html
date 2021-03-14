@@ -12,23 +12,14 @@
     {% csrf_token %} {% comment %} {{form.as_p}} {% endcomment %}
     <div class="my-1">
       <label for="email_username">Email or Username:</label>
-      <input
-        id="id_email_username"
-        type="text"
-        name="email_username"
-        placeholder="Email or Username"
-      />
+      <input id="id_email_username" type="text" name="email_username" placeholder="Email or Username" />
     </div>
     <div class="my-1">
       <label for="password">Password:</label>
-      <input
-        id="id_password"
-        type="password"
-        name="password"
-        placeholder="Password"
-      />
+      <input id="id_password" type="password" name="password" placeholder="Password" />
     </div>
     <input class="button" type="submit" value="Login" />
+    <a href="{% url 'password_reset' %}">Forgot Password..!</a>
   </form>
   <p>Don't have an account? <a href="{% url 'register' %}">Register</a></p>
 </div>

@@ -6,6 +6,12 @@
 
 • It helps you in developing custom User registraion logic and Login to the application using ***Username*** or ***Email***.
 
+• It helps you in understanding default Password Management system provided by ***Django***.
+
+• Please make sure that you have configured ***Email_Backend*** in your project settings.py file.
+
+• If you are using ***gmail*** as your Email service then create an app password for your **Google** account.
+
 • Install the dependencies using below command.
 
 ```sh

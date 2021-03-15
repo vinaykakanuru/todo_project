@@ -26,6 +26,8 @@ urlpatterns = [
     # Password Management URLs
     path('password/reset/',
          PasswordResetView.as_view(
+             subject_template_name='app/password_management/password_reset_subject.txt',
+             email_template_name='app/password_management/password_reset_email.html',
              template_name='app/password_management/password_reset.html',
          ),
          name='password_reset'),

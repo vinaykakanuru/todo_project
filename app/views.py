@@ -7,6 +7,7 @@ from django.views.generic.detail import DetailView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView, FormView
 from django.views.generic.list import ListView
 from django.views.generic import View
+from django.core.mail import EmailMessage
 
 from app.models import Task
 from app.forms import UserForm
